@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     copyArticle('article_competence');
+    alert("coucou");
 });
 
 function copyArticle(articleInputId)
