@@ -1,0 +1,110 @@
+@font-face {
+	font-family: 'amadeusregular';
+	src: url('fonts/Amadeus-webfont.eot');
+	src: url('fonts/Amadeus-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Amadeus-webfont.woff2') format('woff2'),
+		url('fonts/Amadeus-webfont.woff') format('woff'),
+		url('fonts/Amadeus-webfont.ttf') format('truetype'),
+		url('fonts/Amadeus-webfont.svg#amadeusregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	background: url("image/ciel.jpg") no-repeat right;
+}
+
+#liseret
+{
+	background: url("image/silly-walk100px.jpg") repeat-y;
+	width: 110px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header
+{
+	width: 100%;
+	background: #E3B836;
+	font-family: amadeusregular, "Courier 10 Pitch";
+	display: flex;
+	flex-direction: column;
+}
+
+#intro
+{
+	font-size: 2em;
+	color: green;
+	font-weight: normal;
+	text-align: center;
+}
+
+#nom
+{
+	font-size: 2.2em;
+}
+
+img
+{
+	border: 3px solid green;
+	float: right;
+}
+
+section
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	font-size: 1.2em;
+	font-family: "Courier 10 Pitch", sans-serif;
+}
+
+article
+{
+	width: 25%;
+	min-width: 300px;
+	border: 2px black solid;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	padding: 20px;
+	text-align: justify;
+	background: #633413;
+	color: white;
+	margin: 100px 50px 0 0;
+}
+
+h2
+{
+	text-shadow: 3px 3px 3px black;
+	text-decoration: underline;
+}
+
+.ma-vie
+{
+	font-size: 1.5em;
+	text-decoration: underline;
+	font-family: amadeusregular, "Courier 10 Pitch";
+}
+
+@media screen and (max-width: 1280px)
+{
+	#liseret
+	{
+		display: none;
+	}
+
+	section
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	article
+	{
+		margin: 50px;
+		width: 80%;
+	}
+}
